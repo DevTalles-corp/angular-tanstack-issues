@@ -16,9 +16,7 @@
             "outputPath": "dist/github-issues",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": [],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -92,5 +90,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "090fbc79-519e-4fbc-bbdf-fc7c60a91ad2"
   }
 }
