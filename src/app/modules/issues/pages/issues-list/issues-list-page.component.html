@@ -13,7 +13,7 @@
 
   <!-- Listado -->
   <div class="mt-4 flex flex-col col-span-2">
-    <h3>Issues:</h3>
+    <a routerLink="/issue/123">Ir a issue 123</a>
 
     <!-- Todo: Listado de issues -->
 
@@ -24,8 +24,11 @@
 
   <!-- Labels -->
   <div>
-    <h3>Labels:</h3>
-    <!-- Todo: Spinner -->
+    @if( labelsQuery.isLoading() ) {
+    <p>Estamos cargando</p>
+    } @else {
+    <issues-labels-selector [labels]="labelsQuery.data() ?? []" />
+    }
 
     <!-- Todo: Label Selector -->
   </div>
