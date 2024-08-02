@@ -1,0 +1,17 @@
+<div class="w-full">
+  <div class="border border-gray-200 mt-2 rounded-md shadow-sm">
+    <div class="flex items-center bg-blue-500 text-white p-2 rounded-t-md">
+      <img
+        [src]="issue().user.avatar_url"
+        alt="User avatar"
+        class="w-8 h-8 rounded-full"
+      />
+
+      <span class="mx-2">{{ issue().user.login }}</span>
+    </div>
+
+    <div class="p-2 bg-gray-700 text-white">
+      <markdown>{{ issue().body }}</markdown>
+    </div>
+  </div>
+</div>
